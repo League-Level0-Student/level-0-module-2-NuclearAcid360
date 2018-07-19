@@ -21,15 +21,15 @@ AnimalFarm() {
 	 * 1. Ask the user which animal they want, then play the sound of that
 	 * animal.
 	 */
-String animal = JOptionPane.showInputDialog("What anim do you want to hear");
+String animal = JOptionPane.showInputDialog("What animal do you want to hear");
 if(animal.equalsIgnoreCase("Dog")) {
-	playwoof();
+	playWoof();
 }
 if(animal.equalsIgnoreCase("Llama")) {
-	playllama();
+	playLlama();
 }
 if(animal.equalsIgnoreCase("Duck")) {
-	playquack();
+	playQuack();
 }
 if(animal.equalsIgnoreCase("Cat")) {
 	playMeow();
@@ -52,6 +52,9 @@ void playWoof() {
 }
 void playMeow() {
 	playNoise(meowFile);
+}
+void playLlama() {
+	playNoise(llamaFile);
 }
 String quackFile = "quack.wav";
 String mooFile = "moo.wav";
